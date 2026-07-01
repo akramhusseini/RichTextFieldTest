@@ -4,6 +4,18 @@ The build-vs-buy analysis for the editor foundation. This is a **living
 recommendation** — update it as scenarios in [EVALUATION.md](EVALUATION.md) are
 executed.
 
+## ⚠️ Open decision (unresolved)
+
+**Do we need a third-party rich-text library at all, or do we build fully
+custom?** This is the central question the spike exists to answer, and it is
+**not yet decided**. The three live foundations are: keep a 3rd-party core
+(RichTextKit, Option A), drop to native `UITextView`/`NSAttributedString`
+(Option B), or go `WKWebView` + a web editor (Option C). The call depends on the
+open questions in [BACKLOG.md](BACKLOG.md) (esp. the backend HTML format and the
+HTML→editor round-trip) and the results of the [EVALUATION.md](EVALUATION.md)
+matrix. **Record the final verdict at the bottom of this file before any
+productionization begins.**
+
 ## Current state
 
 We are **mixing**: a third-party editor core with a thick custom layer on top.

@@ -25,6 +25,14 @@ more.
 - 🟡 **What's the minimum iOS the LMS app targets?** Governs whether the native
   SwiftUI rich `TextEditor` (Option D) ever becomes viable.
 
+## Decision we owe an answer to
+
+- 🟠 **Third-party editor library vs. fully custom — undecided.** The core call
+  this spike exists to make: keep a 3rd-party core (RichTextKit), drop to native
+  `UITextView`/`NSAttributedString`, or go `WKWebView` + a web editor. It hinges
+  on the open questions above and the evaluation matrix. Track the analysis and
+  record the final verdict in [THIRD_PARTY.md](THIRD_PARTY.md).
+
 ## Known gaps in the current harness
 
 - 🔴 **No HTML → `NSAttributedString` path (C12).** You cannot re-open saved
