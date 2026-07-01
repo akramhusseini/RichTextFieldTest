@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+
+# Xcode — user-specific state
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad
+
+# Xcode — build output
+build/
+DerivedData/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager (keep the shared Package.resolved under the .xcodeproj)
+.build/
+.swiftpm/
+
+# Dependency managers (not used here, kept for safety)
+Pods/
+Carthage/Build/
+
+# Editors / tooling
+.claude/
+.vscode/
+.idea/
